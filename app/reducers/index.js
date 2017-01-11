@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import { topStories } from './stories';
+import { stories } from './stories';
 
-const rootReducer = combineReducers({topStories, routing: routerReducer })
+const rootReducer = combineReducers({stories, routing: routerReducer })
 export default rootReducer

@@ -1,27 +1,27 @@
-import React from 'react';
-import { render } from 'react-dom';
-import App from './components/App';
-import List from './components/List';
+import React from 'react'
+import { render } from 'react-dom'
+import Main from './components/Main'
+import List from './components/List'
 
-import './main.scss';
+import './main.scss'
 
-import { Router, Route, IndexRoute } from 'react-router';
+import { Router, Route, IndexRoute } from 'react-router'
 
-import { Provider } from 'react-redux';
+import { Provider } from 'react-redux'
 
-import { store, history } from './store';
+import { store, history } from './store'
 
-var data = require('./data/stories.json');
+var data = require('./data/stories.json')
 
 console.log(data);
 
 render(
   <Provider store={store}>
     <Router history={history}>
-      <Route path="/" component={App}>
+      <Route path="/" component={Main}>
         <IndexRoute component={List} />
       </Route>
     </Router>
   </Provider>,
   document.body.appendChild(document.createElement('div'))
-);
+)

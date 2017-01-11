@@ -1,3 +1,4 @@
-export function topStories(state = [], action) {
+export function stories(state = [], action) {
+  console.log(state, action)
   return state
 }

@@ -1,12 +1,14 @@
-import React from 'react';
+import React from 'react'
 import List from './List'
 
 import './App.scss';
 
-const App = () => (
+const App = (props) => (
     <div>
       <h1>Hello World</h1>
-      <List />
+      <button onClick={props.showTopStories}>Top</button>
+      <button onClick={props.showNewStories}>New</button>
+      <List {...props}/>
     </div>
   );
 
