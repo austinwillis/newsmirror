@@ -1,7 +1,7 @@
 import React from 'react'
-import List from './List'
+import List from './List.jsx'
 
-import './App.scss';
+import './App.scss'
 
 const App = (props) => (
     <div>
@@ -10,6 +10,6 @@ const App = (props) => (
       <button onClick={props.showNewStories}>New</button>
       <List {...props}/>
     </div>
-  );
+  )
 
-export default App;
+export default App

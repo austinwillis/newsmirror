@@ -2,7 +2,6 @@ export function showTopStories() {
   return {
     type: 'SHOW_TOP_STORIES'
   }
-
 }
 
 export function showNewStories() {

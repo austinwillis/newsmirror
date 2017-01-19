@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import Main from './components/Main'
-import List from './components/List'
+import List from './components/List.jsx'
 
 import './main.scss'
 
@@ -11,9 +11,9 @@ import { Provider } from 'react-redux'
 
 import { store, history } from './store'
 
-var data = require('./data/stories.json')
+let data = require('./data/stories.json')
 
-console.log(data);
+console.log(data)
 
 render(
   <Provider store={store}>

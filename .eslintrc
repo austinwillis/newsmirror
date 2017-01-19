@@ -1,6 +1,5 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb",
   "env": {
     "browser": true,
     "node": true
@@ -35,7 +34,7 @@
     "no-nested-ternary": 0,
     "no-underscore-dangle": 0,
     "no-var": "error",
-    "semi": ["error", "always"],
+    "semi": ["error", "never"],
     "promise/param-names": 2,
     "promise/always-return": 2,
     "promise/catch-or-return": 2,
