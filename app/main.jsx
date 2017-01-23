@@ -2,13 +2,9 @@ import React from 'react'
 import { render } from 'react-dom'
 import Main from './components/Main'
 import List from './components/List.jsx'
-
 import './main.scss'
-
 import { Router, Route, IndexRoute } from 'react-router'
-
 import { Provider } from 'react-redux'
-
 import { store, history } from './store'
 
 let data = require('./data/stories.json')

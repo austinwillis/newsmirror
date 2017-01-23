@@ -6,8 +6,8 @@ import './App.scss'
 const App = (props) => (
     <div>
       <h1>Hello World</h1>
-      <button onClick={props.showTopStories}>Top</button>
-      <button onClick={props.showNewStories}>New</button>
+      <button onClick={props.fetchTopStories}>Top</button>
+      <button onClick={props.fetchNewStories}>New</button>
       <List {...props}/>
     </div>
   )

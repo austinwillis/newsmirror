@@ -2,7 +2,7 @@ import React from 'react'
 
 const List = ({stories}) => (
   <div>
-    {stories.map((story) => <p key={story.id}>{story.id}</p>)}
+    {stories.data.map((story) => <p key={story.id}>{story.id}</p>)}
   </div>
 )
 
