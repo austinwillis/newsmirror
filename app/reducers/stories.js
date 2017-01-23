@@ -5,6 +5,8 @@ export function stories(state = {}, action) {
       return Object.assign({}, state, { isFetching: true, storyType: 'top' })
     case 'FETCH_NEW_STORIES':
       return Object.assign({}, state, { isFetching: true, storyType: 'new' })
+    case 'RECEIVE_STORIES':
+      return Object.assign({}, state, { data: action.stories })
     default:
       return state
   }

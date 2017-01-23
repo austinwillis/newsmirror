@@ -15,7 +15,7 @@ const defaultState = {
   stories: data.stories
 }
 
-export const store = createStore(rootReducer, defaultState,
+export const store = createStore(rootReducer, { stories: { data: [] }},
   compose(
     applyMiddleware(
       thunkMiddleware,

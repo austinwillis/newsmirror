@@ -5,7 +5,7 @@ import './App.scss'
 
 const App = (props) => (
     <div>
-      <h1>Hello World</h1>
+      <h1>Hacker News</h1>
       <button onClick={props.fetchTopStories}>Top</button>
       <button onClick={props.fetchNewStories}>New</button>
       <List {...props}/>
